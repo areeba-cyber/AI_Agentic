@@ -43,3 +43,11 @@ Status code: a number summarizing the outcome
 5xx server error (500 Internal Server Error)
 Headers: metadata about the response
 Body: the actual data, typically JSON
+
+
+-----HTTPS methods:
+The common HTTP methods are:
+GET to read data
+POST to create something
+PUT/PATCH to update
+DELETE to remove
