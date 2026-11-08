@@ -2,3 +2,4 @@ What is an api ?
 Application Programming Interface (API) is a bridge through which two software systems communicates.
 Frontend --> API --> Backend --> Database
 (frontend and backend are software systems)
+(network join the frontend and backend and through API they talk)
