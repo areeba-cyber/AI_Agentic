@@ -18,5 +18,28 @@ https://api.example.com/v1/users/42
 https://api.example.com is the base URL
 /v1 is often the API version
 /users/42 is the resource (user number 42)
-
 Different endpoints do different things: /users might list users, /users/42 fetches one, /orders handles orders.
+
+
+------Requests
+A request is the message the client sends. It has:
+
+Method: what action you want. The common HTTP methods are:
+GET to read data
+POST to create something
+PUT/PATCH to update
+DELETE to remove
+URL: the endpoint, optionally with query parameters (?limit=10&sort=name)
+Headers: metadata such as authentication (Authorization: Bearer <key>) and content type (Content-Type: application/json)
+Body: the data you’re sending (mainly for POST/PUT/PATCH), usually JSON
+
+
+------Responses
+A response is what the server sends back. It has:
+
+Status code: a number summarizing the outcome
+2xx success (200 OK, 201 Created)
+4xx client error (400 Bad Request, 401 Unauthorized, 404 Not Found, 429 Too Many Requests)
+5xx server error (500 Internal Server Error)
+Headers: metadata about the response
+Body: the actual data, typically JSON
