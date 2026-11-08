@@ -3,3 +3,9 @@ Application Programming Interface (API) is a bridge through which two software s
 Frontend --> API --> Backend --> Database
 (frontend and backend are software systems)
 (network join the frontend and backend and through API they talk)
+
+An API (Application Programming Interface) is a defined way for one piece of software to ask another piece of software to do something or give it data, without needing to know how the other side works internally. Think of a restaurant: you (the client) don’t walk into the kitchen. You give your order to a waiter (the API), who relays it to the kitchen (the server) and brings back your food (the response).
+
+Client vs server
+Client: the program that initiates a request. It could be a mobile app, a browser, a Python script, or an AI agent.
+Server: the program that listens for requests, does the work (reads a database, runs logic, calls a model), and sends back a result.
