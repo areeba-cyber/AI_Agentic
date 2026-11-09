@@ -82,3 +82,45 @@ elif r.status_code == 404:
    print("User not found")
 else
    r.raise_for_status()   # raises an exception for any 4xx/5xx
+
+
+------ Headers
+Headers are key-value metadata attached to requests and responses. They describe the message rather than being its content.
+
+Common request headers:
+Header	        Purpose	                           Example
+Authorization	Credentials	                       Bearer sk-abc123
+Content-Type	Format of the body you’re sending  application/json
+Accept	        Format you want back	           application/json
+User-Agent	    Identifies your client	           my-app/1.0
+
+Common response headers:
+Header	        Purpose
+Content-Type	Format of the body returned
+Location	    Where a created or moved resource lives
+Retry-After	    How many seconds to wait (often paired with 429/503)
+X-RateLimit-Remaining	Requests left in your quota (name varies by API)
+-------example = 
+requests.get(
+    "https://api.example.com/v1/users",
+    headers={"Accept": "application/json", "User-Agent": "my-app/1.0"},
+)
+print(r.headers["Content-Type"])
+print(r.headers.get("Retry-After"))   # .get() avoids KeyError if absent
+
+
+------- Query parameters
+Query parameters are extra options appended to the URL after a ?, separated by &. They’re used mostly with GET to filter, sort, search, or paginate.
+
+Common uses:
+Filtering: ?status=active
+Pagination: ?limit=10&offset=20 or ?page=2
+Sorting:    ?sort=created_at&order=desc
+Searching: ?q=python
+----- example = 
+requests.get(
+    "https://api.example.com/v1/users",
+    params={"role": "admin", "limit": 10, "q": "ada lovelace"},
+)
+print(r.url)
+# https://api.example.com/v1/users?role=admin&limit=10&q=ada+lovelace
