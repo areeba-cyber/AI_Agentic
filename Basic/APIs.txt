@@ -158,3 +158,60 @@ Imagine your Python application sends a request, but the server takes too long. 
 
 
 -------- What is JSON
+JSON stands for JavaScript Object Notation.
+It is a lightweight data format used to store and exchange information between applications.
+For example:
+- Python communicates with an API using JSON.
+- An AI model receives structured JSON input.
+- An AI agent returns structured JSON output.
+- Applications exchange user information through JSON.
+---------Example
+{
+    "name": "Areeba",
+    "age": 23,
+    "skills": ["Python", "AI", "React"],
+    "is_student": true
+}
+
+
+------------JSON Data Types
+JSON type	Example
+String	    "Areeba"
+Number	     23
+Boolean	     true
+Null	     null
+Array	    [1, 2, 3]
+Object	    {"name": "Ali"}
+
+
+----------- JSON Objects
+An object stores information in key-value pairs.
+--------example
+{
+    "name": "Areeba",
+    "field": "Computer Science",
+    "semester": 6
+}
+
+
+---------JSON Arrays
+Arrays store multiple values.
+--------example
+{
+    "skills": ["Python", "SQL", "Machine Learning"]
+}
+
+
+-----------Nested JSON
+Nested JSON means putting objects or arrays inside another object.
+This is especially important when working with AI APIs.
+---------example{
+    "user": {
+        "name": "Areeba",
+        "education": {
+            "degree": "BSCS",
+            "semester": 6
+        }
+    },
+    "skills": ["Python", "APIs", "AI"]
+}
