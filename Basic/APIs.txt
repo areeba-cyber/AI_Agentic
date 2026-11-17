@@ -220,3 +220,30 @@ This is especially important when working with AI APIs.
 ----------- Serialization
 Serialization means converting Python data into a JSON string.
 Python → JSON
+
+(json.dumps() — Python object to JSON string.
+json.dump() — Python object to JSON file.)
+
+----------example
+import json
+student = {
+    "name": "Areeba",
+    "age": 23,
+    "Skills": ["Python", "AI"]
+}
+json_data  = json.dumps(student, indent=4)
+print(json_data)
+
+
+---------Deserialization 
+means converting JSON data into Python objects.
+JSON → Python
+
+(json.loads() — JSON string to Python object.
+json.load() — JSON file to Python object.)
+
+------example 
+import json
+json_data = '{"name": "Areeba", "age": 23}'
+python_data = json.loads(json_data)
+print(python_data["name"])
