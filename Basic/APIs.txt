@@ -155,3 +155,6 @@ Allows applications to access resources with permission without sharing the user
 ------HTTP Timeouts
 A timeout defines how long your application waits for a server to respond.
 Imagine your Python application sends a request, but the server takes too long. Without a timeout, your application might keep waiting.
+
+
+-------- What is JSON
