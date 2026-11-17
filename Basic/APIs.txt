@@ -215,3 +215,8 @@ This is especially important when working with AI APIs.
     },
     "skills": ["Python", "APIs", "AI"]
 }
+
+
+----------- Serialization
+Serialization means converting Python data into a JSON string.
+Python → JSON
