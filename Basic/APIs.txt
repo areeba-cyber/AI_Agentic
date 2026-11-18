@@ -296,3 +296,7 @@ except requests.exceptions.RequestException as error:
 ---------Environment Variables
 Environment variables store configuration values outside your Python code.
 For example, instead of writing your API key directly:
+api_key = "my-secret-api-key"
+
+-----------What is a .env File?
+A .env file stores environment variables locally.
