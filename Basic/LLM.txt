@@ -1,0 +1,14 @@
+---------What is an LLM
+LLM stands for Large Language Model.
+It is an AI model trained on large amounts of text data to understand and generate human-like language.
+
+How does an LLM work?
+Imagine you ask:
+"Explain Python in simple words."
+
+The LLM:
+1. Receives your input.
+2. Converts your text into tokens.
+3. Processes those tokens using its neural network.
+4. Predicts what token should come next.
+5. Generates a response token by token.
