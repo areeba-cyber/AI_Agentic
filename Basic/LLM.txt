@@ -30,3 +30,9 @@ love
 learning
 Python
 .
+Why do tokens matter?
+1. LLM APIs often charge based on tokens.
+2. Models have token limits.
+3. Longer prompts consume more tokens.
+4. Your input and the model's output both use tokens.
+Rule of thumb: In English, 1 token is approximately ¾ of a word, although this varies.
