@@ -36,3 +36,18 @@ Why do tokens matter?
 3. Longer prompts consume more tokens.
 4. Your input and the model's output both use tokens.
 Rule of thumb: In English, 1 token is approximately ¾ of a word, although this varies.
+
+
+----------Context Window
+A context window is the maximum amount of information a model can process in one interaction.
+Think of it as the model's working space.
+
+---------For example:
+Imagine an LLM has a context window of 8,000 tokens.
+You provide:
+- System instructions: 500 tokens
+- User question: 500 tokens
+- Previous conversation: 3,000 tokens
+- Retrieved documents: 2,000 tokens
+Total = 6,000 tokens.
+The remaining capacity is 2,000 tokens, subject to the model's input/output allocation.
