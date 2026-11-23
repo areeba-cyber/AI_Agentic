@@ -51,3 +51,15 @@ You provide:
 - Retrieved documents: 2,000 tokens
 Total = 6,000 tokens.
 The remaining capacity is 2,000 tokens, subject to the model's input/output allocation.
+
+
+--------Inference 
+Inference is the process of using a trained AI model to generate predictions or responses.
+
+Simple example:
+Training:
+- The model learns patterns from training data.
+- Its parameters are adjusted.
+Inference:
+- You give the trained model a prompt.
+- It generates an answer.
