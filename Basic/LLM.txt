@@ -12,3 +12,21 @@ The LLM:
 3. Processes those tokens using its neural network.
 4. Predicts what token should come next.
 5. Generates a response token by token.
+Important: An LLM doesn't think exactly like a human. It generates responses based on patterns learned during training and the context it receives.
+
+
+----------What are Tokens?
+Tokens are the small pieces of text that an LLM processes.
+A token can be:
+- A complete word.
+- Part of a word.
+- A punctuation mark.
+- A number or symbol.
+For example:
+Sentence: I love learning Python.
+It might be divided into tokens like:
+I
+love
+learning
+Python
+.
